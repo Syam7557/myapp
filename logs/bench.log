@@ -1,0 +1,34 @@
+2025-09-13 15:23:26,212 DEBUG cd my-bench && python3 -m venv env
+2025-09-13 15:23:30,610 DEBUG cd my-bench && /home/TRI/Desktop/my-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-09-13 15:23:32,880 DEBUG cd my-bench && /home/TRI/Desktop/my-bench/env/bin/python -m pip install --quiet wheel
+2025-09-13 15:23:37,035 LOG Getting frappe
+2025-09-13 15:23:37,036 DEBUG cd my-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-09-13 15:24:28,677 LOG Installing frappe
+2025-09-13 15:24:28,680 DEBUG cd /home/TRI/Desktop/my-bench && /home/TRI/Desktop/my-bench/env/bin/python -m pip install --quiet --upgrade -e /home/TRI/Desktop/my-bench/apps/frappe 
+2025-09-13 15:25:39,535 DEBUG cd /home/TRI/Desktop/my-bench/apps/frappe && yarn install --check-files
+2025-09-13 15:26:24,060 DEBUG cd my-bench && bench build
+2025-09-13 15:26:24,240 INFO /usr/local/bin/bench build
+2025-09-13 15:26:59,035 LOG setting up backups
+2025-09-13 15:26:59,061 LOG backups were set up
+2025-09-13 15:26:59,061 INFO Bench my-bench initialized
+2025-09-13 15:27:46,610 INFO /usr/local/bin/bench new-site mysite.local
+2025-09-13 15:30:19,844 INFO /usr/local/bin/bench new-app myapp
+2025-09-13 15:30:19,847 LOG creating new app myapp
+2025-09-13 15:30:46,868 LOG Installing myapp
+2025-09-13 15:30:46,870 DEBUG cd /home/TRI/Desktop/my-bench && /home/TRI/Desktop/my-bench/env/bin/python -m pip install --quiet --upgrade -e /home/TRI/Desktop/my-bench/apps/myapp 
+2025-09-13 15:30:49,509 DEBUG bench build --app myapp
+2025-09-13 15:30:49,721 INFO /usr/local/bin/bench build --app myapp
+2025-09-13 15:31:05,796 INFO /usr/local/bin/bench --site mysite.local install-app myapp
+2025-09-13 15:31:28,515 INFO /usr/local/bin/bench start
+2025-09-13 15:31:29,214 INFO /usr/local/bin/bench serve --port 8001
+2025-09-13 15:31:29,262 INFO /usr/local/bin/bench watch
+2025-09-13 15:31:29,299 INFO /usr/local/bin/bench worker
+2025-09-13 15:31:29,411 INFO /usr/local/bin/bench schedule
+2025-09-13 15:33:40,087 INFO /usr/local/bin/bench --site mysite.local add-to-hosts
+2025-09-13 15:34:10,039 INFO /usr/local/bin/bench --site mysite.local set-config developer_mode 1
+2025-09-13 15:34:28,027 INFO /usr/local/bin/bench start
+2025-09-13 15:34:28,470 INFO /usr/local/bin/bench watch
+2025-09-13 15:34:28,909 INFO /usr/local/bin/bench schedule
+2025-09-13 15:34:29,006 INFO /usr/local/bin/bench serve --port 8001
+2025-09-13 15:34:29,116 INFO /usr/local/bin/bench worker
+2025-09-13 15:37:04,957 INFO /usr/local/bin/bench --site mysite.local add-to-hosts
